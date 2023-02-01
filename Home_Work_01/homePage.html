@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+
+<style>
+    legend{
+    text-align: center;
+    font-style: italic;
+}
+table, th, td {
+        border:1px solid black;
+        margin: au;
+    }
+</style>
+
+<body>
+    <!-- Book marks -->
+    <h3 style="text-align: center;">Book Marks</h3>
+    <table style="margin: auto;">
+        <tr>
+            <th><p><a href="#genarelInfo">Go To Genarel Info</a></p></th>
+            <th><p><a href="#addressInfo">Go To Address Info</a></p></th>
+            <th><p><a href="#nidInfo">Go To Nid Info</a></p></th>
+        </tr>
+    </table>
+    
+    <br>
+    <!-- Genarel Info -->
+    <form>
+        <fieldset>
+            <legend id="genarelInfo">Genarel Info</legend>
+            <!-- Personal Info -->
+            <label for="first-name">First Name:</label>
+            <input type="text" id="firstName" name="first-name" placeholder="User Name"><br><br>
+            <label for="surname">SurName:</label>
+            <input type="text" id="surName" name="sur-name" placeholder="User SurName"><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="User Email"><br><br>
+            <label for="tel-number">Phone Name:</label>
+            <input type="number" id="telNumber" name="tel-number" placeholder="User Tel Number"><br><br>
+            <label for="citizenship">Citizenship:</label>
+            <input type="text" id="citizenship" name="Citizenship" placeholder="User Citizenship"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <!-- Blood Group -->
+            <label for="blood-group">Choose Your Blood Group:</label>
+            <select name="blood-group" id="bloodGroup">
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+ </option>
+                <option value="AB-">AB- </option>
+            </select><br><br>
+            <!-- Type Of Passport -->
+            <h3>Type Of Pasport You Want</h3>
+            <input type="radio" id="ordinary" name="Pasport-type" value="ordinary">
+            <label for="ordinary">Ordinary</label>
+            <input type="radio" id="official" name="Pasport-type" value="official">
+            <label for="official">Official</label><br><br>
+            <br>
+            <label><strong>Do You Have Previous Passport:</strong></label>
+            <input type="checkbox" id="iHave" name="i-have" value="Bike">
+            <label for="i-have"> I have</label><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend id="addressInfo">Address Info</legend>
+            <!-- Divison -->
+            <label for="division">Choose Your Division:</label>
+            <select name="division" id="division">
+                    <option value="dhaka">Dhaka</option>
+                    <option value="barisal">Barisal</optio>
+                    <option value="chittagong">Chittagong</option>
+                    <option value="khulna">Khulna</option>
+                    <option value="mymensingh">Mymensingh</option>
+                    <option value="rajshahi">Rajshahi</option>
+                    <option value="rangpur">Rangpur</option>
+                    <option value="sylhet">Sylhet </option>
+                </select>
+                <br><br>
+            <!-- Presesnt Address -->
+            <label for="present-address">Present address:</label>
+            <input type="text" id="presentAddress" name="present-address" placeholder="User Present Address"><br><br>
+            <label for="thana">Thana:</label>
+            <input type="text" id="thana" name="thana" placeholder="User Present Thana"><br><br>
+            <label for="postal-code">Present Postal Code</label>
+            <input type="number" id="postalCode" name="postal-code" placeholder="Present Postalcode"><br><br>
+            <br>
+            <input type="checkbox" id="sameAddress" name="same-address" value="Same">
+            <label for="same-address"> Present Address & Permanent Address Same</label><br><br>
+            <!-- Permanent Address -->
+            <label for="permanent-address">Permanent address:</label>
+            <input type="text" id="permanentAddress" name="permanent-address" placeholder="User Permanent Address"><br><br>
+            <label for="thana">Thana:</label>
+            <input type="text" id="thana" name="thana" placeholder="User Permanent Thana"><br><br>
+            <label for="postal-code">Permanent Postal Code</label>
+            <input type="number" id="postalCode" name="postal-code" placeholder="User Permanent Postalcode"><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <!-- NId Info -->
+            <legend for="nidInfo" id="nidInfo">NID Or Birth Cirtificate Info</legend>
+            <label for="nid-number">NID Number:</label>
+            <input type="number" id="nidNumber" name="nid-number" placeholder="User NID Number"><br><br>
+            <label for="nid-image">NID Image:</label>
+            <input type="file" id="nidImage" name="nid-image"><br><br>
+            <!-- Birthcirtificate Info -->
+            <label for="birth-cirtificate-number">Birth Cirtificate Number:</label>
+            <input type="number" id="birthCirtificateNumber" name="birth-cirtificate-number" placeholder="User BirthCirtificate Number"><br><br>
+            <label for="birth-cirtificate-image">BirthCirtificate Image:</label>
+            <input type="file" id="birthCirtificateImage" name="birth-cirtificate-image"><br><br>
+        </fieldset>
+        <br><br>
+        <!-- Payment methode -->
+        <fieldset>
+            <legend for="payment-methode" id="paymentMethode">Payment</legend>
+            <h3>Choose Payment Mathode</h3>
+            <input type="radio" id="bkash" name="payment-methode" value="bkash">
+            <label for="bkash">Bkash</label>
+            <input type="radio" id="nagad" name="payment-methode" value="nagad">
+            <label for="nagad">Nagad</label>
+            <input type="radio" id="rocket" name="payment-methode" value="rocket">
+            <label for="rocket">Rocket</label>
+            <input type="radio" id="visa" name="payment-methode" value="visa">
+            <label for="visa">Visa Card</label><br><br>
+            <br>
+            <!-- Total amount -->
+            <label for="total-amount">Total Amount:</label>
+            <input type="text" id="totalAmount" name="total-amount"><br><br>
+            <br>
+            <!-- Passport receving time -->
+            <label for="reciving-time">Choose Reciving Type</label>
+            <select name="reciving-time" id="recivingTime">
+                    <option value="normal">Normal (4-monthes)</option>
+                    <option value="urgent">Urgent (15-Days)</option>
+                </select>
+        </fieldset>
+        <!-- Submit button -->
+        <br><br>
+        <button type="submit" value="Submit">Submit</button>
+        <button type="submit" value="Submit" disabled>Submit2</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<style>
+    legend{
+        text-align: center;
+    }
+</style>
+
+<!-- Main Body -->
+<body>
+    <!-- Header -->
+    <h1 style="text-align: center;">Welcome to Bangladesh Passport Service</h1>
+
+    <!-- Genarel Info -->
+    <fieldset>
+        <h2>Are You Applying From Bangladesh ?</h2>
+        <input type="radio" id="yes" name="genarel_info" value="yes">
+        <label for="yes">YES</label>
+        <br>
+        <input type="radio" id="no" name="genarel_info" value="no">
+        <label for="no">NO</label>
+        <br>
+        <br>
+        <form>
+            <fieldset>
+                <legend><em>Login Info</em></legend>
+                <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="User Email"><br><br>
+                <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="User password" method="post"><br><br>
+            </fieldset>
+        </form>
+        <br>
+        <button type="submit" form="form1" value="Submit" ><a href="homePage.html">Submit</a></button> 
+    </fieldset>
+</body>
+</html>

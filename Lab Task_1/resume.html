@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+</head>
+
+<!-- styles -->
+<style>
+    body{
+        background-color: black;
+        color: white;
+        
+    }
+    table, th, td {
+        border:1px solid white;
+        margin: au;
+    }
+    .info{
+        text-align: center;
+        color: white;
+    }
+    </style>
+
+<!-- Main Body -->
+<body>
+    <h1 style="text-align: center;"><strong>My Resume</strong> </h1>
+
+    <!-- Book marks -->
+    <table style="margin: auto;">
+        <tr>
+            <th><p><a href="#personalInfo">Go To Personal Info</a></p></th>
+            <th><p><a href="#aboutMe">Go To About Me</a></p></th>
+            <th><p><a href="#educationalInfo">Go to Educational Info</a></p></th>
+            <th><p><a href="#skills">Go to Skills</a></p></th>
+            <th><p><a href="#comments">Go to Comments</a></p></th>
+        </tr>
+    </table>
+    <br>
+
+    <!-- Personal Info -->
+    <div>
+        <form>
+            <fieldset>
+                <legend class="info" id="personalInfo"><em>Personal Info</em></legend>
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" placeholder="User Name"><br><br>
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="User Name"><br><br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="User Email"><br><br>
+                <label for="pnumber">Phone Number:</label>
+                <input type="number" id="pnumber" name="pnumber" placeholder="User Number"><br><br>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+                <br>
+                <br>
+                <label for="image">Choose image:</label>
+                <input type="file" id="myFile" name="filename">
+            </fieldset>
+        </form>
+    </div>
+    <br>
+
+    <!-- About Me -->
+    <div>
+        <fieldset>
+            <legend class="info" id="aboutMe"><em>About Me</em></legend>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem totam natus enim esse accusantium minus, aliquam atque! Placeat maxime earum obcaecati ex fuga facilis, dolorum doloremque quo quis assumenda vero incidunt delectus nisi suscipit, veritatis blanditiis molestiae accusamus ipsa officiis nostrum quasi adipisci accusantium expedita! Optio quas amet soluta, ab a consectetur distinctio consequatur, inventore culpa non eum autem adipisci architecto doloremque fuga beatae laboriosam magni temporibus voluptates atque? Provident.</p>
+        </fieldset>
+    </div>
+    <br>
+    
+    <!-- Educational Info -->
+    <div>
+        <fieldset>
+            <legend class="info" id="educationalInfo"><em>Educational Info</em></legend>
+            <table>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Passing Year</th>
+                    <th>GPA</th>
+                </tr>
+                <tr>
+                    <th>SSC</th>
+                    <th>Narayangonj High School And College</th>
+                    <th>2017</th>
+                    <th>5.00</th>
+                </tr>
+                <tr>
+                    <th>HSC</th>
+                    <th>Dhaka College</th>
+                    <th>2019</th>
+                    <th>4.80</th>
+                </tr>
+                <tr>
+                    <th>BSc</th>
+                    <th>American International University</th>
+                    <th>2019- still now</th>
+                    <th>3.70</th>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+    <br>
+
+    <!-- Skills -->
+    <div>
+        <fieldset>
+            <legend class="info" id="skills"><em>Skills</em></legend>
+            <h3>Field Of Expertices</h3>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>HTML</li>
+                <li>Css</li>
+                <li>JS</li>
+            </ul>  
+        </fieldset>
+    </div>
+    <br>
+
+    <!-- Comments -->
+    <div>
+        <fieldset>
+            <legend class="info" id="comments">Comments</legend>
+            <textarea name="message" rows="10" cols="30" placeholder="Share Your thoughts Here"></textarea>
+        </fieldset>
+    </div>
+
+    <!-- Submit button -->
+    <br><br>
+    <button type="submit" value="Submit">Button</button>
+</body>
+</html>
